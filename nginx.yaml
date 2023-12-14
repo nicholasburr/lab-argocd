@@ -8,6 +8,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-00
+  namespace: nginx
 spec:
   selector:
     matchLabels:
@@ -28,6 +29,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-00
+  namespace: nginx
 spec:
   ports:
   - name: http
@@ -42,6 +44,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-01
+  namespace: nginx
 spec:
   selector:
     matchLabels:
@@ -62,6 +65,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-01
+  namespace: nginx
 spec:
   ports:
   - name: http
