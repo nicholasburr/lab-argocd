@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+data:
+  project: ZGVmYXVsdA==
+  type: Z2l0
+  url: aHR0cHM6Ly9naXRodWIuY29tL25pY2hvbGFzYnVyci9sYWItYXJnb2NkLmdpdA==
+kind: Secret
+metadata:
+  labels:
+    argocd.argoproj.io/secret-type: repository
+  name: repo-4157513190
+  namespace: argocd
+type: Opaque
